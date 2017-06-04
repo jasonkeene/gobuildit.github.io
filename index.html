@@ -38,7 +38,8 @@ Copyright 2017, Jason Keene and Eno Compton, All Rights Reserved.
       /* margin right medium */
       .mrm { margin-right: 100px; }
       .push-right { margin-left: 400px; }
-      .pull-up { margin-top: -100px; }
+      .push-down { margin-bottom: -10px; }
+      .pull-up { margin-top: -50px; }
       .pos-relative { position: relative; }
       .z-idx-high { z-index: 100; }
       .z-idx-low { z-index: 1; }
@@ -68,14 +69,16 @@ Copyright 2017, Jason Keene and Eno Compton, All Rights Reserved.
   }
 </code>
     </pre>
-      <div class="push-right pos-relative z-idx-low pull-up">
+    <footer class="pull-up">
+      <div class="push-right pos-relative z-idx-low push-down">
         <!-- Gophers are courtesy of https://gopherize.me -->
         <img class="mrm" src="/gopher-jason-small.png" alt="Gopher" title="Jason">
         <img src="/gopher-eno-small.png" alt="Gopher" title="Eno">
       </div>
 
-    <pre class="status-bar pos-relative z-idx-high">
+      <pre class="status-bar pos-relative z-idx-high">
 <code><span class="code-text-inverse">:write episode-1</span><span class="cursor code-text-inverse"> </span></code>
-    </pre>
+      </pre>
+    </footer>
   </body>
 </html>
