@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
+<!--
+
+   ______         ____        _ __    __   ______  __
+  / ____/___     / __ )__  __(_) /___/ /  /  _/ /_/ /
+ / / __/ __ \   / __  / / / / / / __  /   / // __/ /
+/ /_/ / /_/ /  / /_/ / /_/ / / / /_/ /  _/ // /_/_/
+\____/\____/  /_____/\__,_/_/_/\__,_/  /___/\__(_)
+
+
+Copyright 2017, Jason Keene and Eno Compton, All Rights Reserved.
+
+-->
   <head>
     <meta charset="utf-8">
     <title>Go Build It!</title>
 
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
     <style media="screen">
       body {
         min-width:600px;
@@ -13,78 +25,31 @@
         color: #FFF;
         font-family: monospace;
       }
-      pre {
-        margin: 0;
-      }
-      code {
-        font-size: 1.5em;
-      }
-      .indent-1 {
-        margin-left: 4em;
-      }
-      .code-text {
-        color: #C4C7C4;
-      }
-      .code-text-inverse {
-        color: #2F3236;
-      }
-
-      .code-comment {
-        color: #7BA1B5;
-      }
-
-      .code-string {
-        color: #D06B65;
-      }
-
-      .code-keyword {
-        color: #E08A3F;
-      }
-
-      .code-type {
-        color: #ABBD7A;
-      }
-
-      a.code-link {
-        color: #7BA1B5
-      }
-
-      .push-right {
-        margin-left: 400px;
-      }
-
-      .pull-down {
-        margin-bottom: -10px;
-      }
-
-      .pos-relative {
-        position: relative;
-      }
-
-      .z-idx-high {
-        z-index: 100;
-      }
-
-      .z-idx-low {
-        z-index: 1;
-      }
-
-      .status-bar {
-        height: 30px;
-        background-color: #DEB065;
-      }
-
+      pre { margin: 0; }
+      code { font-size: 1.5em; }
+      .indent-1 { margin-left: 4em; }
+      .code-text { color: #C4C7C4; }
+      .code-text-inverse { color: #2F3236; }
+      .code-comment { color: #7BA1B5; }
+      .code-string { color: #D06B65; }
+      .code-keyword { color: #E08A3F; }
+      .code-type { color: #ABBD7A; }
+      .code-link { color: #7BA1B5 }
+      .push-right { margin-left: 400px; }
+      .pull-down { margin-bottom: -10px; }
+      .pos-relative { position: relative; }
+      .z-idx-high { z-index: 100; }
+      .z-idx-low { z-index: 1; }
+      .status-bar { height: 30px; background-color: #DEB065; }
       .cursor {
         background: #26292C;
         display: inline-block;
         animation: blink 1s ease-in 0s infinite;
       }
-
       @keyframes blink {
         0%   { background: #26292C }
         100% { background: #DEB065 }
       }
-
     </style>
   </head>
   <body>
