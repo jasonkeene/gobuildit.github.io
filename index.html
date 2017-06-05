@@ -20,7 +20,6 @@ Copyright 2017, Jason Keene and Eno Compton, All Rights Reserved.
     <style media="screen">
       body {
         min-width: 960px;
-        height: 100%;
         background: #26292C;
         color: #FFF;
         font-family: monospace;
@@ -41,6 +40,7 @@ Copyright 2017, Jason Keene and Eno Compton, All Rights Reserved.
       .push-right { margin-left: 200px; }
       .push-down { margin-bottom: -10px; }
       .pull-up { margin-top: -50px; }
+      .pin-bottom { position: absolute; bottom: 0; left: 0; right: 0; }
       .pos-relative { position: relative; }
       .z-idx-high { z-index: 100; }
       .z-idx-low { z-index: 1; }
@@ -70,7 +70,7 @@ Copyright 2017, Jason Keene and Eno Compton, All Rights Reserved.
   }
 </code>
     </pre>
-    <footer class="pull-up">
+    <footer class="pin-bottom">
       <div class="center pos-relative z-idx-low push-down">
         <!-- Gophers are courtesy of https://gopherize.me -->
         <img class="mrm" src="/gopher-jason-small.png" alt="Gopher" title="Jason">
